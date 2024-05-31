@@ -35,6 +35,6 @@ if st.button("Predict"):
     fuel_encoded=encode_dict['fuel_type'][fuel_type]
     trans_encoded=encode_dict['trans_type'][trans_type]
     price=model_pred(fuel_encoded, trans_encoded)
-    st.text('Predicted Price' +str(price))
+    st.text('Predicted Price' +str(price[0]))
 #else:
     #st.write("Goodbye")
