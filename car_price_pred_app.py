@@ -4,7 +4,7 @@ import numpy as np
 import datetime
 
 
-st.header('Cars24 car price', divider='rainbow')
+st.header('Cars24 Car Price Predictor', divider='rainbow')
 #st.header('_Streamlit_ is :blue[cool] :sunglasses:')
 #st.write('Daily Close chart')
 #df=pd.read_csv()
