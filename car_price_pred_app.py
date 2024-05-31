@@ -25,9 +25,10 @@ import pickle
 def model_pred(fuel_encoded, trans_encoded):
     with open('car_pred','rb') as file:
         reg_model=pickle.load(file)
-        imput_features=[[2012,1,120000,fuel_encoded,trans_encoded, 19.7, Engine, 47,Seats]]
+    imput_features=[[2012,1,120000,fuel_encoded,trans_encoded, 19.7, Engine, 47,Seats]]
 
-        reg_model.predict(imput_features)
+    price=reg_model.predict(imput_features)
+    return price
 #st.button("Reset", type="primary")
 if st.button("Predict"):
     #st.write("Why hello there")
